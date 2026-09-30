@@ -18,6 +18,7 @@
     <nav>
       <a href="#lab">Конструктор</a>
       <a href="#fun">Фабрика</a>
+      <a href="#fortune">Передбачення</a>
     </nav>
   </header>
 
@@ -52,12 +53,12 @@
           <div class="control-group">
             <label>Додатки та Топпінги:</label>
             <div class="topping-options">
-              <button class="top-btn" data-top="🥜 Горіхи">🥜 Горіхи</button>
-              <button class="top-btn" data-top="🌶️ Перець Чилі">🌶️ Чилі</button>
-              <button class="top-btn" data-top="🧂 Морська Сіль">🧂 Сіль</button>
-              <button class="top-btn" data-top="🍓 Сублімована Полуниця">🍓 Полуниця</button>
-              <button class="top-btn" data-top="☕ Кавові Зерна">☕ Кава</button>
-              <button class="top-btn" data-top="🍊 Цветом Апельсина">🍊 Апельсин</button>
+              <button class="top-btn" data-top="🥜" data-name="Горіхи">🥜 Горіхи</button>
+              <button class="top-btn" data-top="🌶️" data-name="Перець Чилі">🌶 Чилі</button>
+              <button class="top-btn" data-top="🧂" data-name="Морська Сіль">🧂 Сіль</button>
+              <button class="top-btn" data-top="🍓" data-name="Полуниця">🍓 Полуниця</button>
+              <button class="top-btn" data-top="☕" data-name="Кавові Зерна">☕ Кава</button>
+              <button class="top-btn" data-top="🍊" data-name="Апельсин">🍊 Апельсин</button>
             </div>
           </div>
 
@@ -66,7 +67,16 @@
 
         <div class="lab-preview">
           <div class="preview-bar" id="choco-preview">
-            <div class="preview-inner">
+            <div class="visual-choco-bar" id="visual-bar">
+              <div class="choco-grid">
+                <div class="sq"></div><div class="sq"></div>
+                <div class="sq"></div><div class="sq"></div>
+                <div class="sq"></div><div class="sq"></div>
+              </div>
+              <div class="toppings-overlay" id="toppings-overlay"></div>
+            </div>
+
+            <div class="preview-info">
               <span class="preview-title" id="res-title">Гіркий Шоколад</span>
               <p id="res-desc">70% какао</p>
               <div id="res-toppings" class="toppings-list"></div>
@@ -89,8 +99,7 @@
         <button id="heat-btn" class="btn btn-fire">🔥 Підігріти (Утримуй)</button>
       </div>
     </section>
-  </main>
-  <!-- Fortune Chocolate Section -->
+
     <section id="fortune" class="section">
       <h2>🔮 Шоколадне Передбачення</h2>
       <p class="section-desc">Торкнися цукерки, щоб розламати її та дізнатися свою долю!</p>
@@ -105,6 +114,7 @@
         </div>
       </div>
     </section>
+  </main>
 
   <footer>
     <p>Зроблено з любов'ю до шоколаду 🍫 | VS Code Web Project</p>
